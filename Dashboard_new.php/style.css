@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -17,8 +19,7 @@ body{
     width: 250px !important;
 }
 .main-content{
-   flex-grow:1;
-
+   flex-grow:1;    
 }
 .nav-p{
     margin: 0;
@@ -159,19 +160,21 @@ body{
 /* donut chart */
 
 .donut-chart-div{
-    /* position: relative;
+    position: relative;
     flex-grow:1;
     width: 100%;    
     
 
     display:flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 
-    flex-grow:1;
-
+    /* flex-grow: 1;
+    position: relative;       
+    width: 100%;
+    min-height: 250px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; */
 }
 
 .top-candidate-data-div{
@@ -179,10 +182,16 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
+    /* width: 100%;
+    min-height: 250px; Essential for maintainAspectRatio: false */
 }
 
 .myBarchart{
     flex-grow: 1;
+   
+    
 }
 
 /* #myDonutChart{
