@@ -152,15 +152,7 @@ body {
 }
 
 .popular-job-div {
-    /* flex-grow:1;
-    background-color: aliceblue;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    padding: 5px;
-    margin-top: 12px;
     
-   display: flex;
-   flex-direction: column; */
-
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
@@ -178,11 +170,7 @@ body {
 
 .top-candidate-div {
 
-    /* flex-grow:1;
-    background-color: aliceblue;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    padding: 5px;
-    margin-top: 12px; */
+    
 
     flex-grow: 1;
     flex-shrink: 1;
@@ -211,12 +199,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* flex-grow: 1;
-    position: relative;       
-    width: 100%;
-    min-height: 250px;
-    padding-top: 5px;
-    padding-bottom: 5px; */
+ 
 }
 
 .top-candidate-data-div {
@@ -371,12 +354,6 @@ hr {
     .dashboard-4th-div {
         flex-wrap: wrap
     }
-    /* .job-status-div{
-        min-width:100%;
-    } */
-    /* .todo-list-div{
-        min-width:100%! important;
-    } */
 }
 
 .todo-list-div {
