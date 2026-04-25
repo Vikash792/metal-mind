@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box !important;
+     font-family:'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+   
+   
+}
+
+.dashboard-container {
+    display: flex;
+}
+
+.sidebar {
+    height: 56px;
+}
+
+.navbar {
+    background-color: aliceblue;
+}
+
+.toggle-bar {
+    width: 250px !important;
+}
+
+.main-content {
+    flex-grow: 1;
+    max-width: 100%;
+   
+
+}
+
+.nav-p {
+    margin: 0;
+    font-size: xx-small;
+    margin-top: 10px;
+}
+
+.nav-a {
+    font-size: small !important;
+}
+
+.admin-div {
+    background-color: aliceblue;
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+/* upperdiv in container of sidebar and admin */
+.main-top-div {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+.dashboard {
+    margin: 12px;
+}
+
+.dashboard-card-div {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboard-card {
+
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 1;
+    min-width: 100px;
+    height: auto;
+    min-height: 130px;
+
+
+    margin: 5px;
+
+
+    /*    
+   min-width:100px;
+   max-width: 200px;
+   min-height: 100px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-card p {
+    margin: 0;
+
+
+}
+
+.dashboard-card h6 {
+    margin: 0;
+}
+
+.card-button {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+
+}
+
+.card1 {
+    background-color: #7FB3D5;
+}
+
+.card2 {
+    background-color: #F5B041
+}
+
+.card3 {
+    background-color: #5D6D7E;
+}
+
+.card4 {
+    background-color: #E74C3C;
+}
+
+.card5 {
+    background-color: rgb(124, 180, 157);
+}
+
+.card-content {
+    padding: 12px;
+    color: white;
+    overflow-wrap: anywhere;
+
+}
+
+.card-button {
+    width: 100%;
+}
+
+/* popular job and top candidate section */
+.dashboard-3rd-div {
+    display: flex;
+    gap: 12px;
+    height: auto;
+
+    margin-top: 12px;
+
+    min-height: 200px;
+}
+
+.popular-job-div {
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    /* width: 50%; */
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba(0, 0, 0, 0.4);
+
+    padding: 5px;
+
+}
+
+.top-candidate-div {
+
+    
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    /* width: 50%; */
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba(0, 0, 0, 0.4);
+
+    padding: 5px;
+
+}
+
+/* donut chart */
+
+.donut-chart-div {
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+
+.top-candidate-data-div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* width: 100%;
+    min-height: 250px; Essential for maintainAspectRatio: false */
+}
+
+.myBarchart {
+    flex-grow: 1;
+
+
+}
+
+/* #myDonutChart{
+  height:80% !important;
+  width:80% !important;
+} */
+
+hr {
+    margin: 0 !important;
+}
+
+/* media queries for popular job  */
+@media (max-width:600px) {
+    .dashboard-card {
+        min-width: 34%
+    }
+
+    .dashboard-3rd-div {
+        flex-direction: column;
+    }
+
+    .popular-job-div {
+        width: 100%;
+    }
+
+    .top-candidate-div {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 450px) {
+    .dashboard-card {
+        flex-grow: 1;
+        flex-basis: 100%;
+
+    }
+}
+
+
+/* dashboard 4th div */
+
+.dashboard-4th-div {
+    /* border: 2px solid; */
+    height: auto;
+
+    margin-top: 12px;
+   
+
+    display: flex;
+    gap: 12px;
+
+
+}
+
+.job-status-div {
+    flex-grow: 1;
+    border: 1px solid;
+    max-height: 400px;
+    flex-basis: 0;
+    min-width: 273px;
+    padding:12px;
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.job-status-table-head{
+    margin-bottom: 10px;
+   
+}
+.job-status-data-div{
+    overflow: auto;
+    
+    flex-grow: 1;
+}
+
+
+.job-status-table-head {
+    display: flex;
+
+}
+
+.indivisual-job-status {
+    display: flex;
+
+}
+
+.column-1 {
+
+    flex-grow: 1.5;
+    flex-basis: 0;
+    /* min-width:30%; */
+    max-width: 30%;
+    padding: 2px;
+    overflow-wrap: break-word;
+
+}
+
+.column-2 {
+    flex-grow: 1.5;
+    flex-basis: 0;
+    max-width: 30%;
+    padding: 2px;
+    overflow-wrap: break-word;
+}
+
+.column-3 {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 20%;
+    padding: 2px;
+    overflow-wrap: break-word;
+
+}
+
+.column-4 {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 20%;
+    padding: 2px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-4 i {
+    margin: 2px;
+    flex-grow: 1;
+}
+
+
+@media(max-width:600px) {
+    .dashboard-4th-div {
+        flex-wrap: wrap
+    }
+}
+
+.todo-list-div {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px solid;
+    min-height: 150px;
+    max-height:fit-content;
+    /* max-width: 50%; */
+    min-width: 273px;
+    padding:12px;
+
+}
+
+.todo-list-options-div {
+  
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
+
+.todo-list-options-div button {
+    margin:10px 8px;
+    flex-grow:1;
+    border:0
+}
